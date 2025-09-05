@@ -1,0 +1,260 @@
+/* Card Title Colors for Home Page Features */
+.cardTitleBlue {
+  color: #888ed3;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+.cardTitleGreen {
+  color: #38a169;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+.cardTitleGold {
+  color: #d69e2e;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+.cardDesc {
+  color: #2d3748;
+  font-size: 1.05rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+/* Advanced Home Page Styles - Responsive, Modern, Proficient */
+.homeRoot {
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: #f7fbff;
+}
+.heroOverlay{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.heroContent{
+  width: 60%;
+  padding: 20px;
+}
+.hero {
+  /* background: linear-gradient(120deg, #e3f0ff 0%, #ddecef 100%); */
+  padding: 32px 0 0;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+  min-height: 420px;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+.heroBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: radial-gradient(circle at 60% 40%, hsl(203, 80%, 80%) 0%, transparent 70%),
+              linear-gradient(120deg, rgba(37,99,235,0.1), rgba(147,197,253,0.2));
+  animation: pulseBg 6s infinite alternate ease-in-out;
+  filter: blur(2px);
+}
+
+@keyframes pulseBg {
+  0% { transform: scale(1); opacity: 0.9; }
+  100% { transform: scale(1.05); opacity: 1; }
+}
+
+.heroBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: radial-gradient(circle at 60% 40%, rgba(30, 58, 138, 0.15) 0%, transparent 70%),
+              linear-gradient(120deg, rgba(37,99,235,0.08), rgba(147,197,253,0.12));
+  animation: pulseBg 6s infinite alternate ease-in-out;
+}
+
+@keyframes pulseBg {
+  0% { transform: scale(1); opacity: 0.85; }
+  100% { transform: scale(1.05); opacity: 1; }
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin: 0 0 18px;
+  color: #0f172a;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 2;
+  animation: fadeSlideUp 1.2s cubic-bezier(.4,2,.6,1) both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: 'Poppins', 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(90deg, #0f172a, #1e3a8a, #0f172a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  animation: gradientFlow 4s linear infinite, fadeSlideUp 1.2s ease-out forwards;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+
+.heroDesc {
+  font-size: 1.2rem;
+  color: #334155;
+  max-width: 700px;
+  margin: 10px auto 32px;
+  line-height: 1.8;
+  position: relative;
+  z-index: 2;
+  animation: fadeSlideUp 1.8s cubic-bezier(.4,2,.6,1) both;
+  font-family: 'Poppins', 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.carouselWrap {
+  margin: 0 auto;
+  max-width: 900px;
+  position: relative;
+  z-index: 3;
+  animation: slideUp 1.2s 0.5s cubic-bezier(.4,2,.6,1) both;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 60px auto 0;
+  position: relative;
+  z-index: 4;
+  padding-bottom: 30px;
+}
+.featureCard {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(1, 7, 13, .3);
+  padding: 16px 16px;
+  max-width:200px;
+  min-width: 160px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  border: 1px solid #dadee6;
+  animation: cardPop 1.2s 0.2s cubic-bezier(.4,2,.6,1) both;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+.featureCard:hover {
+  transform: scale(1.2) rotate(-2deg);
+  box-shadow: 0 12px 36px rgba(6, 19, 47, 0.18);
+  border-color: #6dd5ed;
+}
+.featureIcon {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+  color: #2563eb;
+  filter: drop-shadow(0 2px 8px #b3e0ff);
+}
+@media (max-width: 900px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  .carouselWrap {
+    max-width: 100vw;
+  }
+  .features {
+    gap: 18px;
+  }
+  .featureCard {
+    max-width: 90vw;
+    min-width: 180px;
+    padding: 28px 12px;
+  }
+}
+@media (max-width: 600px) {
+  .heroOverlay{
+    flex-direction: column;
+  }
+  .heroContent{
+    width: 80%;
+    padding: 20px;
+  }
+  .hero {
+    padding: 32px 0 0;
+    min-height: 320px;
+  }
+  .heroTitle {
+    font-size: 1.3rem;
+    gap: 8px;
+  }
+  .heroDesc {
+    font-size: 1rem;
+    max-width: 90vw;
+  }
+  .features {
+    flex-direction: row;
+    gap: 12px;
+    margin: 24px auto 0;
+  }
+  .featureCard {
+    padding: 18px 6px;
+    font-size: 0.98rem;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(60px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes cardPop {
+  0% { opacity: 0; transform: scale(0.8) translateY(60px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+@keyframes pulseBg {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+
+/* Animated background with fly ash brick blocks */
+.bricks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: 
+    linear-gradient(90deg, #c8c2b8 48%, #b5afa5 50%), 
+    linear-gradient(#c8c2b8 48%, #b5afa5 50%);
+  background-size: 100px 50px;
+  animation: bricksSlide 12s linear infinite;
+  filter: brightness(0.9) blur(1px);
+  z-index: 1;
+}
+
+@keyframes bricksSlide {
+  from { transform: translate(-50px, -50px); }
+  to { transform: translate(0, 0); }
+}

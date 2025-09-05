@@ -1,0 +1,104 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 320px;
+  max-width: 90vw;
+  position: relative;
+  animation: popupIn 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes popupIn {
+  0% { transform: scale(0.8) translateY(40px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.closeBtn:hover {
+  color: #e74c3c;
+}
+
+.title {
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3a4a;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.input:focus {
+  border: 1.5px solid #3b82f6;
+}
+
+.button {
+  background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(59,130,246,0.08);
+  transition: background 0.2s;
+}
+.button:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #0ea5e9 100%);
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .popup {
+    min-width: 90vw;
+    padding: 1.5rem 0.7rem 1.2rem 0.7rem;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .button {
+    font-size: 1rem;
+  }
+}

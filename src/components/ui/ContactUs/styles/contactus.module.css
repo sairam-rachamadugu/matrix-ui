@@ -1,0 +1,170 @@
+.contactUsRoot {
+  position: relative;
+  background: linear-gradient(90deg, #eff6ff 0%, #dbeafe 100%);
+  padding: 4rem 0;
+}
+.contactUsContainer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+@media (min-width: 1024px) {
+  .contactUsContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactTitle {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+.contactDesc {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #64748b;
+}
+.contactDetails {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contactIcon {
+  padding: 0.75rem;
+  border-radius: 9999px;
+  background: #2563eb;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactText {
+  color: #334155;
+}
+.contactFormSection {
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.08);
+  border-radius: 0.75rem;
+  padding: 2rem;
+}
+.contactFormTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.formRow .formInput {
+  width: 90%;
+}
+@media (min-width: 640px) {
+  .formRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.formLabel {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 0.25rem;
+}
+.formInput, .formTextarea {
+  width: 95%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #334155;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.01);
+  outline: none;
+  transition: border 0.2s;
+}
+.formInput:focus, .formTextarea:focus {
+  border-color: #2563eb;
+}
+.formTextarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.formButton {
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.formButton:hover {
+  background: #1d4ed8;
+}
+
+.contactUsRoot {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(180deg, #dcefff, #f0faff);
+  overflow: hidden;
+}
+
+/* Paper plane background animation */
+.planeAnimation::before {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0b/Paper_plane_icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+  animation: planeFly 6s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes planeFly {
+  0% {
+    transform: translateX(-50%) translateY(0) scale(0.9);
+    opacity: 0.2;
+  }
+  30% {
+    transform: translateX(-50%) translateY(-150px) scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(-50%) translateY(-300px) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-500px) scale(1.2);
+    opacity: 0;
+  }
+}
+

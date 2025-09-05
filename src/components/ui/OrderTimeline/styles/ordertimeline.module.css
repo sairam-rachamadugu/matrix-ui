@@ -1,0 +1,116 @@
+.timelineSection {
+  background: #fff;
+  border-radius: 18px;
+  max-width: 900px;
+  margin: 40px auto 32px auto;
+  box-shadow: 0 2px 16px rgba(49,130,206,0.10);
+  padding: 36px 0 32px 0;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+.timelineTitle {
+  color: #2b6cb0;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.timelineWrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+.timelineStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  min-width: 120px;
+}
+.timelineIconDone {
+  background: #38a169;
+  color: #fff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px rgba(56,161,105,0.10);
+}
+.timelineIconActive {
+  background: #3182ce;
+  color: #fff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.10);
+  border: 3px solid #6dd5ed;
+}
+.timelineIconPending {
+  background: #e2e8f0;
+  color: #a0aec0;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px rgba(160,174,192,0.10);
+}
+.timelineLabel {
+  color: #232526;
+  font-size: 1.08rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.timelineConnector {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #3182ce 0%, #38a169 100%);
+  position: absolute;
+  top: 22px;
+  left: 100%;
+  z-index: 1;
+}
+@media (max-width: 700px) {
+  .timelineSection {
+    max-width: 99vw;
+    padding: 18px 0 12px 0;
+  }
+  .timelineTitle {
+    font-size: 1.2rem;
+  }
+  .timelineWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .timelineStep {
+    flex-direction: row;
+    align-items: center;
+    min-width: 0;
+    margin-bottom: 18px;
+  }
+  .timelineConnector {
+    width: 4px;
+    height: 40px;
+    left: 22px;
+    top: 100%;
+    background: linear-gradient(180deg, #3182ce 0%, #38a169 100%);
+  }
+}
